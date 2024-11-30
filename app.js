@@ -113,3 +113,37 @@ class snell {
 }
 snell.namekumar = 'chaman';
 snell.name;
+function abcdzd(name, cb) {
+}
+abcdzd('hello', (value) => {
+    console.log(value);
+});
+function aaaa(obj) {
+    console.log(obj.key);
+}
+aaaa({ name: 'hello', age: 12, key: 'hello' });
+function bbbb(a, b) {
+    return "hello";
+}
+bbbb('hello', 'hello');
+class Tvkkaremote {
+    switchOffTV() {
+        console.log('TV is off');
+    }
+}
+class carkaremote {
+    switchoffcar() {
+        console.log('car is off');
+    }
+}
+const tv = new Tvkkaremote();
+const car = new carkaremote();
+function switchoffkaro(device) {
+    if (device instanceof Tvkkaremote) {
+        device.switchOffTV();
+    }
+    else if (device instanceof carkaremote) {
+        device.switchoffcar();
+    }
+}
+switchoffkaro(tv);

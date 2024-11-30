@@ -161,3 +161,54 @@ class snell {
 }
 
 snell.name;
+
+function abcdzd(name: string, cb: (value: string) => void) {
+
+}
+
+abcdzd('hello', (value: string) => {
+    console.log(value);
+});
+
+interface halwa<T> {
+    name: string;
+    age: number;
+    key: T;
+}
+
+function aaaa(obj: halwa<string>) {
+    console.log(obj.key);
+}
+
+aaaa({name: 'hello', age: 12, key: 'hello'});
+
+function bbbb<T>(a: T, b: T): T {
+    return "hello" as T;
+}
+
+bbbb<string>('hello', 'hello');
+
+class Tvkkaremote {
+    switchOffTV() {
+        console.log('TV is off');
+    }
+}
+
+class carkaremote {
+    switchoffcar() {
+        console.log('car is off');
+    }
+}
+
+const tv = new Tvkkaremote();
+const car = new carkaremote();
+
+function switchoffkaro(device: Tvkkaremote | carkaremote) {
+    if(device instanceof Tvkkaremote) {
+        device.switchOffTV();
+    } else if (device instanceof carkaremote) {
+        device.switchoffcar();
+    }
+}
+
+switchoffkaro(tv);
